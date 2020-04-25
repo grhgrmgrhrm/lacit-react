@@ -1,0 +1,38 @@
+
+[data-novi-id="7"]{
+  font-weight: 700;
+}
+[data-novi-id="6"]{
+  font-weight: 700;
+}
+[data-novi-id="5"]{
+  text-align: left;
+}
+[data-novi-id="4"]{
+  text-align: left;
+}
+[data-novi-id="3"]{
+  
+  text-transform: none;
+  font-size: 19px;
+  color: #f5f5f5;
+}
+[data-novi-id="2"]{
+  font-weight: 700;
+  font-weight: 700;
+}
+[data-novi-id="1"]{
+  text-align: left;
+}
+[data-novi-id="0"]{
+  text-align: left;
+}
+@media (min-width: 1600px) and (max-width: NaNpx){
+[data-novi-id="1"]{
+  font-weight: 700;
+  font-weight: 700;
+}
+[data-novi-id="0"]{
+  font-weight: 700;
+}
+}
