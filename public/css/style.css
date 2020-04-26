@@ -1,0 +1,410 @@
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerLight.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerRegular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerMedium.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerBold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.nav {
+    font-size: 15px;
+    font-family: "Muller";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: fixed;
+    right: 25%;
+    top: 41.7px;
+    z-index: 53;
+}
+
+.nav > ul, a {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+ul > li {
+    padding-right: 50px;
+}
+
+#logo {
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+}
+
+#sidebar {
+    /*min-width: calc(100% - 74%);*/
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 6;
+    background-image: url(../images/bg.jpg), -webkit-linear-gradient( 0deg, rgb(33,155,218) 0%, rgb(18,85,156) 100%);
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.sidebarContent {
+    margin: 30px;
+}
+
+.sidebarContent > p, h5 {
+    text-align: center;
+}
+
+.sidebarContent > a {
+    display: block; text-align: center;
+    margin: 15px 0;
+}
+
+.sidebarContent > a:hover {
+    color: rgb(18, 85, 156);
+}
+
+.sidebarContent > p {
+    font-size: 14px;
+    font-family: "Muller";
+    color: rgb(48, 51, 58);
+    line-height: 2.143;
+    z-index: 5;
+}
+
+.formStyle {
+    max-width: 314px;
+}
+
+input[type=text], input[type~="password"], input[type~="select"], textarea  {
+    font-size: 16px;
+    font-family: "Muller";
+    color: rgb(48, 51, 58);
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-style: none none groove none;
+    height: 25px;
+}
+
+input[type=submit] {
+    border-radius: 6px;
+    background-color: rgb(36, 154, 219);
+    width: 220px;
+    height: 52px;
+    z-index: 8;
+    color: #ffffff;
+    margin: 0 45px;
+}
+
+.select-wrapper {
+    position: relative;
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-style: none none groove none;
+    color: #ccc;
+
+}
+
+.select-wrapper > select {
+    width: 100%;
+    height: 37px;
+    background: transparent;
+    border: 0;
+    appearance: none;
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-wrapper > select::-ms-expand{
+    display: none;
+}
+
+.select-arrow {
+    position: absolute;
+    z-index: -1;
+    border: 8px solid transparent;
+    border-bottom: 0;
+    right: 11px;
+}
+.select-arrow:nth-child(2) {
+    top: 15px;
+    border-top-color: #bdbdbd;
+}
+.select-arrow:nth-child(3) {
+    top: 13px;
+    border-top-color: #FFF;
+}
+
+label {
+    font-size: 12px;
+    font-family: "Muller";
+    color: rgb(140, 152, 166);
+    text-align: left;
+    z-index: 12;
+    padding: 40px 0 0 0;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    z-index: 47;
+    padding-left: 10px;
+}
+
+.checkmark:after {
+    display: block;
+}
+
+.chekcontainer {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebarBacktohome {
+    font-size: 18px;
+    font-family: "Muller";
+    color: rgb(18, 85, 156);
+    font-weight: bold;
+    line-height: 1.2;
+    z-index: 52;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+    #logo {
+        width: 33%;
+        left: 33%;
+        position: fixed;
+    }
+
+    .nav {
+        position: fixed;
+        right: 33%;
+    }
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #content {
+        width: 67%;
+    }
+
+    #sidebar {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 33%;
+        left: 33%;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .nav {
+        position: absolute;
+        right: 40%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formStyle {
+        max-width: 100%;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #content {
+        width: 67%;
+    }
+
+    #sidebar {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 33%;
+        left: 33%;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .nav {
+        position: absolute;
+        right: 33%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formStyle {
+        max-width: 100%;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    #logo {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .nav {
+        position: absolute;
+        right: 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formStyle {
+        max-width: 100%;
+    }
+
+    .d-md-flex {
+    display: contents;
+    }
+
+    .sidebar {
+    width: 75%;
+    margin: 0 auto;
+    }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+        #logo {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .nav {
+        position: absolute;
+        right: 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formStyle {
+        max-width: 100%;
+    }
+
+}
+
